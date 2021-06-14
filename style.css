@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Clash';
+    src: url('fonts/clash.ttf') format('truetype');  
+    font-weight: normal;
+    font-style: normal;
+}    
+body {
+    background:url(img/clash_back.png);
+    background-size: 100%;
+    font-family: Clash;
+}
+.bg{
+    background-color: rgba(153, 120, 10, 0);
+    backdrop-filter: blur(3px);
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.calculadora-dano {
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 1px solid #878787;
+    border-radius: 20px;
+    background-color: rgba(243, 222, 33, 0.308);
+    backdrop-filter: blur(3px);
+    box-shadow: 3px 3px 10px black;
+}
+
+.linha-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.box{
+    border: 1px solid #878787;
+    border-radius: 20px;
+    background-color: rgba(243, 231, 126, 0.596);
+    justify-content: center;
+}
+
+.elementos-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.elemento {
+    cursor: pointer;
+}
+
+.elemento p {
+    text-align: center;
+    font-weight: bold;
+}
+
+button {
+    background-color: #fc9b09;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-family: Clash;
+    backdrop-filter: blur(3px);
+    box-shadow: 3px 3px 10px black;
+}
+
+.selecionado {
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#dano {
+    font-size: medium;
+    font-weight: bold;
+}
